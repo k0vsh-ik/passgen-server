@@ -18,7 +18,7 @@ class Passwords(db.Model):
         return '<Passwords %r>' % self.id
 
 
-@app.route('/')
+@app.route('/', methods = ['POST', 'GET'])
 def main():
     return {"passwords": ["pass1", "pass2", "pass3"]}
 
