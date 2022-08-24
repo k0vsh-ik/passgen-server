@@ -33,7 +33,7 @@ def main():
         try:
             db.session.add(record)
             db.session.commit()
-            return f'{passwd}   JSON: {content}'
+            return f'{passwd}'
 
         except:
             return 'An error while recording'
